@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
@@ -7,6 +8,7 @@
     <link rel="icon" href="favicon.jpg">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="survey-wrapper">
         <div class="survey-card">
@@ -15,15 +17,16 @@
                 <div class="emoji-cloud">
                     💜 ✨ 🍫 🌙 🔮
                 </div>
-                <h1>HI, LOL </h1>
+                <h1>HI, LOL</h1>
                 <h4>(idek if it will work or not lmao :3)</h4>
                 <div class="sub-message">
-                    <i>I know you are a tuff boi, but please read this carefully and answer with your heart. I want to understand you better and be there for you in the best way I can.</i>
+                    <i>I know you are a tuff boi, but please read this carefully and answer with your heart. I want to
+                        understand you better and be there for you in the best way I can.</i>
                 </div>
                 <!-- progress bar and step counter -->
                 <div class="progress-area">
                     <div class="step-counter">
-                        <span id="currentStepDisplay">1</span> / <span id="totalSteps">5</span>
+                        <span id="currentStepDisplay">1</span> / <span id="totalSteps">8</span>
                     </div>
                     <div class="progress-bar-container">
                         <div class="progress-bar-fill" id="progressFill"></div>
@@ -33,118 +36,180 @@
 
             <!-- gentle note -->
             <div class="gentle-note">
-                <span>🦋</span>
-                <span>one little thing at a time. no rush. just you & me. 💜</span>
+                <span>🥀</span>
+                <span>Take your time. You can ignore it too. (but i hope you read and allow me to know about your
+                    thoughts)</span>
             </div>
 
             <!-- dynamic step container -->
             <div class="steps-container" id="stepsContainer">
-                <!-- step 1 -->
+
+                <!-- step 1: Are you gay? -->
                 <div class="step step-active" data-step="1">
-                    <div class="question-emoji-big">🌀</div>
-                    <div class="step-question">how are you feeling right now?</div>
+                    <div class="question-emoji-big">🤨</div>
+                    <div class="step-question">Are you gay?</div>
                     <div class="options-group step-options" id="q1_options">
-                        <button type="button" class="option-btn" data-value="sad / disappointed">
-                            <span>😞</span> sad / disappointed
+                        <button type="button" class="option-btn" data-value="Oh no.. how do you know?">
+                            <span>😳</span> Oh no.. how do you know? 🤧
                         </button>
-                        <button type="button" class="option-btn" data-value="frustrated / annoyed">
-                            <span>😤</span> frustrated / annoyed
+                        <button type="button" class="option-btn" data-value="Yes i'm">
+                            <span>😑</span> Yes i'm. 😑
                         </button>
-                        <button type="button" class="option-btn" data-value="hurt / misunderstood">
-                            <span>💔</span> hurt / misunderstood
-                        </button>
-                        <button type="button" class="option-btn" data-value="just tired / drained">
-                            <span>😔</span> just tired / drained
-                        </button>
-                        <button type="button" class="option-btn" data-value="a bit better now">
-                            <span>🍀</span> a bit better now
+                        <button type="button" class="option-btn" data-value="No, i'm not">
+                            <span>🏃🏻‍♂️💨</span> No, i'm not. 🏃🏻‍♂️💨
                         </button>
                     </div>
                     <div class="selected-feedback" id="q1_feedback"></div>
                 </div>
 
-                <!-- step 2 -->
+                <!-- step 2: Do you hate me? -->
                 <div class="step" data-step="2">
-                    <div class="question-emoji-big">🫂</div>
-                    <div class="step-question">what would help you feel more heard?</div>
+                    <div class="question-emoji-big">🥀</div>
+                    <div class="step-question">Do you hate me?</div>
                     <div class="options-group step-options" id="q2_options">
-                        <button type="button" class="option-btn" data-value="space to cool down">
-                            <span>🌿</span> space to cool down
+                        <button type="button" class="option-btn" data-value="Absolutely fucking duh">
+                            <span>🙂‍↕️</span> Absolutely fucking duh. 🙂‍↕️
                         </button>
-                        <button type="button" class="option-btn" data-value="a genuine apology">
-                            <span>🤍</span> a genuine apology
+                        <button type="button" class="option-btn" data-value="Maybe... who knows">
+                            <span>😐</span> Maybe... who knows 😐
                         </button>
-                        <button type="button" class="option-btn" data-value="just listen without fixing">
-                            <span>👂</span> just listen without fixing
+                        <button type="button" class="option-btn" data-value="Not interested anymore">
+                            <span>😑</span> Not interested anymore. 😑
                         </button>
-                        <button type="button" class="option-btn" data-value="cuddles & reassurance">
-                            <span>🧸</span> cuddles & reassurance
+                        <button type="button" class="option-btn"
+                            data-value="Not at all, how could you even think about it">
+                            <span>🥺</span> Not at all, how could you even think about it? 🥺
                         </button>
-                        <button type="button" class="option-btn" data-value="talking it through slowly">
-                            <span>💬</span> talking it through slowly
+                        <button type="button" class="option-btn" data-value="Neutral. No hate No love">
+                            <span>💜</span> Neutral. No hate No love. 💜
                         </button>
                     </div>
                     <div class="selected-feedback" id="q2_feedback"></div>
                 </div>
 
-                <!-- step 3 -->
+                <!-- step 3: Did you ever feel anything between us? -->
                 <div class="step" data-step="3">
-                    <div class="question-emoji-big">❤️‍🩹</div>
-                    <div class="step-question">how upset are you feeling?</div>
-                    <div class="heart-scale-group" id="q3_options">
-                        <button type="button" class="heart-btn" data-value="1">
-                            <span class="heart-icon">💗</span> 1 — a little
+                    <div class="question-emoji-big" style="text-align: center;">
+                        <img src="24.png" alt="cute illustration"
+                            style="width: 60px; height: 60px; object-fit: contain; display: inline-block;">
+                    </div>
+                    <div class="step-question">When we were together, did you ever feel anything between us?</div>
+                    <div class="options-group step-options" id="q3_options">
+                        <button type="button" class="option-btn" data-value="Not at all">
+                            <span>🙄</span> Not at all 🙄
                         </button>
-                        <button type="button" class="heart-btn" data-value="2">
-                            <span class="heart-icon">💗💗</span> 2 — kinda
+                        <button type="button" class="option-btn" data-value="Maybe">
+                            <span>🫠</span> Maybe... 🫠
                         </button>
-                        <button type="button" class="heart-btn" data-value="3">
-                            <span class="heart-icon">💗💗💗</span> 3 — moderately
+                        <button type="button" class="option-btn"
+                            data-value="Umm.. confusing.. I liked you but as a friend">
+                            <span>🤔</span> Umm.. confusing.. I liked you but as a friend
                         </button>
-                        <button type="button" class="heart-btn" data-value="4">
-                            <span class="heart-icon">💗💗💗💗</span> 4 — quite a bit
-                        </button>
-                        <button type="button" class="heart-btn" data-value="5">
-                            <span class="heart-icon">💗💗💗💗💗</span> 5 — very much
+                        <button type="button" class="option-btn" data-value="YES">
+                            <span>💜</span> YES.
                         </button>
                     </div>
                     <div class="selected-feedback" id="q3_feedback"></div>
                 </div>
 
-                <!-- step 4 -->
+                <!-- step 4: How do you feel about me now? (TEXT) -->
                 <div class="step" data-step="4">
-                    <div class="question-emoji-big">📝</div>
-                    <div class="step-question">anything you want me to know?</div>
-                    <div class="open-ended-area">
-                        <textarea id="openEnded" rows="4" placeholder="write here... what made you upset, what i didn't notice, or just 'i need a hug' 🫂"></textarea>
-                        <div class="hint-text">no pressure — only if you feel like sharing 💜</div>
+                    <div class="question-emoji-big">💭</div>
+                    <div class="step-question">How do you feel about me now?</div>
+                    <div class="open-ended-area" style="text-align: center;">
+                        <textarea id="q4_text" rows="4" placeholder="Write your honest feelings here..."
+                            style="width: 90%; display: block; margin: 0 auto; text-align: center; padding: 16px; border-radius: 28px; background: #0F1115; border: 1.5px solid #2A1B3A; color: #E3D9FC; font-family: inherit; font-size: 0.95rem; resize: vertical;"></textarea>
+                        <div class="hint-text" style="text-align: center;">be honest, i can take it 💜</div>
                     </div>
                     <div class="selected-feedback" id="q4_feedback"></div>
                 </div>
 
-                <!-- step 5 -->
+                <!-- step 5: Do you miss me? -->
                 <div class="step" data-step="5">
-                    <div class="question-emoji-big">🌟</div>
-                    <div class="step-question">one last gentle thing...</div>
-                    <div class="promise-area">
-                        <label class="checkbox-cute">
-                            <input type="checkbox" id="promiseCheck"> 
-                            <span>✨ i promise i'll read everything with an open heart and no excuses.</span>
-                        </label>
-                        <p class="promise-note">(you don't have to check this — but it means a lot to me)</p>
+                    <div class="question-emoji-big">🥺</div>
+                    <div class="step-question">Do you miss me?</div>
+                    <div class="options-group step-options" id="q5_options">
+                        <button type="button" class="option-btn" data-value="I miss you like I breathe">
+                            <span>💜</span> I miss you like I breathe
+                        </button>
+                        <button type="button" class="option-btn" data-value="Sometimes">
+                            <span>🫤</span> Sometimes..
+                        </button>
+                        <button type="button" class="option-btn" data-value="Nope, Not at all">
+                            <span>😐</span> Nope, Not at all
+                        </button>
                     </div>
                     <div class="selected-feedback" id="q5_feedback"></div>
                 </div>
+
+                <!-- step 6: Where did it go wrong? (TEXT) -->
+                <div class="step" data-step="6">
+                    <div class="question-emoji-big">💔</div>
+                    <div class="step-question">Where did it go wrong?</div>
+                    <div class="open-ended-area" style="text-align: center;">
+                        <textarea id="q6_text" rows="4" placeholder="Tell me what went wrong..."
+                            style="width: 90%; display: block; margin: 0 auto; text-align: center; padding: 16px; border-radius: 28px; background: #0F1115; border: 1.5px solid #2A1B3A; color: #E3D9FC; font-family: inherit; font-size: 0.95rem; resize: vertical;"></textarea>
+                        <div class="hint-text" style="text-align: center;">i want to understand 🥀</div>
+                    </div>
+                    <div class="selected-feedback" id="q6_feedback"></div>
+                </div>
+
+                <!-- step 7: Is there a 2nd chance? -->
+                <div class="step" data-step="7">
+                    <div class="question-emoji-big">🔄</div>
+                    <div class="step-question">Is there a 2nd chance?</div>
+                    <div class="options-group step-options" id="q7_options">
+                        <button type="button" class="option-btn" data-value="nope. too late">
+                            <span>🚫</span> nope. too late.
+                        </button>
+                        <button type="button" class="option-btn" data-value="up to you.. if you know me then..">
+                            <span>💜</span> up to you.. if you know me then..
+                        </button>
+                        <button type="button" class="option-btn" data-value="idk">
+                            <span>🤷</span> idk
+                        </button>
+                    </div>
+                    <div class="selected-feedback" id="q7_feedback"></div>
+                </div>
+
+                <!-- step 8: Something I don't know? (TEXT with image) -->
+                <div class="step" data-step="8">
+                    <div class="question-emoji-big" style="text-align: center;">
+                        <img src="3.png" alt="cute illustration"
+                            style="width: 60px; height: 60px; object-fit: contain; display: inline-block;">
+                    </div>
+                    <div class="step-question">Is there something I need to know that I don't know?</div>
+                    <div class="open-ended-area" style="text-align: center;">
+                        <textarea id="q8_text" rows="4" placeholder="Tell me what i'm missing..."
+                            style="width: 90%; display: block; margin: 0 auto; text-align: center; padding: 16px; border-radius: 28px; background: #0F1115; border: 1.5px solid #2A1B3A; color: #E3D9FC; font-family: inherit; font-size: 0.95rem; resize: vertical;"></textarea>
+                        <div class="hint-text" style="text-align: center;">i'm ready to listen 💜</div>
+                    </div>
+                    <div class="selected-feedback" id="q8_feedback"></div>
+                </div>
+
+                <!-- step 9: Promise check (Message only - NO CHECKBOX) -->
+                <div class="step" data-step="9">
+                    <div class="question-emoji-big">🌟</div>
+                    <div class="step-question">one last gentle thing...</div>
+                    <div class="promise-area" style="text-align: center;">
+                        <p class="promise-message" style="color: #E3D9FC; margin-bottom: 0px; font-size: 1rem;">
+                            ✨ I promise I'll read everything with an open heart and no excuses. ✨
+                        </p>
+                    </div>
+                    <div class="selected-feedback" id="q9_feedback"></div>
+                </div>
+
             </div>
 
             <!-- navigation buttons -->
             <div class="nav-buttons">
                 <button type="button" class="nav-btn prev-btn" id="prevBtn" disabled>← back</button>
                 <button type="button" class="nav-btn next-btn" id="nextBtn">next →</button>
-                <button type="button" class="nav-btn submit-final" id="submitFinalBtn" style="display: none;">💌 send with love 💌</button>
+                <button type="button" class="nav-btn submit-final" id="submitFinalBtn" style="display: none;">💌 send
+                    with love 💌</button>
             </div>
 
-            <p class="footnote">every tap is safe here. take your time. 💜</p>
+            <p class="footnote">every tap is safe here. take your time. 🕰️</p>
         </div>
     </div>
 
@@ -153,17 +218,19 @@
         <div class="modal-content">
             <span class="close-modal">&times;</span>
             <div class="modal-emoji">💜✨💜</div>
-            <h2>thank you, my love</h2>
-            <p id="modalMessage">i read every word. you matter so much. let's talk when you're ready. 🫂</p>
-            <button class="modal-btn" id="closeModalBtn">okay, i feel a little lighter 🌙</button>
+            <h2>Thank you, my love</h2>
+            <p id="modalMessage">I will read every word. you matter so much. let's talk when you're ready. 🫂</p>
+            <button class="modal-btn" id="closeModalBtn">Your API</button>
         </div>
     </div>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-<script>
-   (function(){
-      emailjs.init("5qSMS1aTj-qSCCa7v"); // 👈 REPLACE with your Public Key
-   })();
-</script>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script>
+        (function () {
+            emailjs.init("5qSMS1aTj-qSCCa7v");
+        })();
+    </script>
     <script src="main.js"></script>
 </body>
+
 </html>
