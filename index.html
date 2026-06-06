@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>💜 for my Choglet boi 🍫</title>
+    <link rel="icon" href="favicon.jpg">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="survey-wrapper">
+        <div class="survey-card">
+            <!-- header with progress indicator -->
+            <div class="cute-header">
+                <div class="emoji-cloud">
+                    💜 ✨ 🍫 🌙 🔮
+                </div>
+                <h1>HI, LOL </h1>
+                <h4>(idek if it will work or not lmao :3)</h4>
+                <div class="sub-message">
+                    <i>I know you are a tuff boi, but please read this carefully and answer with your heart. I want to understand you better and be there for you in the best way I can.</i>
+                </div>
+                <!-- progress bar and step counter -->
+                <div class="progress-area">
+                    <div class="step-counter">
+                        <span id="currentStepDisplay">1</span> / <span id="totalSteps">5</span>
+                    </div>
+                    <div class="progress-bar-container">
+                        <div class="progress-bar-fill" id="progressFill"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- gentle note -->
+            <div class="gentle-note">
+                <span>🦋</span>
+                <span>one little thing at a time. no rush. just you & me. 💜</span>
+            </div>
+
+            <!-- dynamic step container -->
+            <div class="steps-container" id="stepsContainer">
+                <!-- step 1 -->
+                <div class="step step-active" data-step="1">
+                    <div class="question-emoji-big">🌀</div>
+                    <div class="step-question">how are you feeling right now?</div>
+                    <div class="options-group step-options" id="q1_options">
+                        <button type="button" class="option-btn" data-value="sad / disappointed">
+                            <span>😞</span> sad / disappointed
+                        </button>
+                        <button type="button" class="option-btn" data-value="frustrated / annoyed">
+                            <span>😤</span> frustrated / annoyed
+                        </button>
+                        <button type="button" class="option-btn" data-value="hurt / misunderstood">
+                            <span>💔</span> hurt / misunderstood
+                        </button>
+                        <button type="button" class="option-btn" data-value="just tired / drained">
+                            <span>😔</span> just tired / drained
+                        </button>
+                        <button type="button" class="option-btn" data-value="a bit better now">
+                            <span>🍀</span> a bit better now
+                        </button>
+                    </div>
+                    <div class="selected-feedback" id="q1_feedback"></div>
+                </div>
+
+                <!-- step 2 -->
+                <div class="step" data-step="2">
+                    <div class="question-emoji-big">🫂</div>
+                    <div class="step-question">what would help you feel more heard?</div>
+                    <div class="options-group step-options" id="q2_options">
+                        <button type="button" class="option-btn" data-value="space to cool down">
+                            <span>🌿</span> space to cool down
+                        </button>
+                        <button type="button" class="option-btn" data-value="a genuine apology">
+                            <span>🤍</span> a genuine apology
+                        </button>
+                        <button type="button" class="option-btn" data-value="just listen without fixing">
+                            <span>👂</span> just listen without fixing
+                        </button>
+                        <button type="button" class="option-btn" data-value="cuddles & reassurance">
+                            <span>🧸</span> cuddles & reassurance
+                        </button>
+                        <button type="button" class="option-btn" data-value="talking it through slowly">
+                            <span>💬</span> talking it through slowly
+                        </button>
+                    </div>
+                    <div class="selected-feedback" id="q2_feedback"></div>
+                </div>
+
+                <!-- step 3 -->
+                <div class="step" data-step="3">
+                    <div class="question-emoji-big">❤️‍🩹</div>
+                    <div class="step-question">how upset are you feeling?</div>
+                    <div class="heart-scale-group" id="q3_options">
+                        <button type="button" class="heart-btn" data-value="1">
+                            <span class="heart-icon">💗</span> 1 — a little
+                        </button>
+                        <button type="button" class="heart-btn" data-value="2">
+                            <span class="heart-icon">💗💗</span> 2 — kinda
+                        </button>
+                        <button type="button" class="heart-btn" data-value="3">
+                            <span class="heart-icon">💗💗💗</span> 3 — moderately
+                        </button>
+                        <button type="button" class="heart-btn" data-value="4">
+                            <span class="heart-icon">💗💗💗💗</span> 4 — quite a bit
+                        </button>
+                        <button type="button" class="heart-btn" data-value="5">
+                            <span class="heart-icon">💗💗💗💗💗</span> 5 — very much
+                        </button>
+                    </div>
+                    <div class="selected-feedback" id="q3_feedback"></div>
+                </div>
+
+                <!-- step 4 -->
+                <div class="step" data-step="4">
+                    <div class="question-emoji-big">📝</div>
+                    <div class="step-question">anything you want me to know?</div>
+                    <div class="open-ended-area">
+                        <textarea id="openEnded" rows="4" placeholder="write here... what made you upset, what i didn't notice, or just 'i need a hug' 🫂"></textarea>
+                        <div class="hint-text">no pressure — only if you feel like sharing 💜</div>
+                    </div>
+                    <div class="selected-feedback" id="q4_feedback"></div>
+                </div>
+
+                <!-- step 5 -->
+                <div class="step" data-step="5">
+                    <div class="question-emoji-big">🌟</div>
+                    <div class="step-question">one last gentle thing...</div>
+                    <div class="promise-area">
+                        <label class="checkbox-cute">
+                            <input type="checkbox" id="promiseCheck"> 
+                            <span>✨ i promise i'll read everything with an open heart and no excuses.</span>
+                        </label>
+                        <p class="promise-note">(you don't have to check this — but it means a lot to me)</p>
+                    </div>
+                    <div class="selected-feedback" id="q5_feedback"></div>
+                </div>
+            </div>
+
+            <!-- navigation buttons -->
+            <div class="nav-buttons">
+                <button type="button" class="nav-btn prev-btn" id="prevBtn" disabled>← back</button>
+                <button type="button" class="nav-btn next-btn" id="nextBtn">next →</button>
+                <button type="button" class="nav-btn submit-final" id="submitFinalBtn" style="display: none;">💌 send with love 💌</button>
+            </div>
+
+            <p class="footnote">every tap is safe here. take your time. 💜</p>
+        </div>
+    </div>
+
+    <!-- thank you modal -->
+    <div id="thankyouModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-emoji">💜✨💜</div>
+            <h2>thank you, my love</h2>
+            <p id="modalMessage">i read every word. you matter so much. let's talk when you're ready. 🫂</p>
+            <button class="modal-btn" id="closeModalBtn">okay, i feel a little lighter 🌙</button>
+        </div>
+    </div>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script>
+   (function(){
+      emailjs.init("5qSMS1aTj-qSCCa7v"); // 👈 REPLACE with your Public Key
+   })();
+</script>
+    <script src="main.js"></script>
+</body>
+</html>
